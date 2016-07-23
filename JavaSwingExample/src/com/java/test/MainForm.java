@@ -173,6 +173,18 @@ public class MainForm {
 		});
 		btnFilter.setBounds(169, 148, 89, 23);
 		frame.getContentPane().add(btnFilter);
+		
+		
+		JButton btnClose = new JButton("Close");
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});
+		btnClose.setBounds(260, 148, 89, 23);
+		frame.getContentPane().add(btnClose);
+		
+		
 
 		JLabel label = new JLabel("Age :");
 		label.setHorizontalAlignment(SwingConstants.RIGHT);
